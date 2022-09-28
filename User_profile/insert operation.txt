@@ -1,0 +1,37 @@
+<?php
+    //storing data from HTML form
+    /*$name = $_POST["name"];
+    $id = $_POST["id"];
+    $livesin = $_POST["levesin"];
+    $mobileno = $_POST["mobile"];
+    $email = $_POST["email"];
+    $work = $_POST["work"];
+    $education = $_POST["education"];
+    $citizen = $_POST["citizen"];*/
+
+    //connecting to the database
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "user_profile";
+
+    //making connection to the database
+    $connect = mysqli_connect($servername, $username, $password, $database);
+    if(!$connect)
+    {
+        die("Sorry...!! We faield to connect." . mysqli_connect_error());
+    }
+
+    //inserting data into the database
+    $push = "INSERT INTO `user_1`(`Name`, `Id`, `Lives_in`, `Mobile`, `Email`, `Work`, `Education`, `Citizen`) VALUES ('$name','$id','$livesin','$mobileno','$email','$work','$education','$citizen')";
+
+    if(mysqli_query($connect,$push))
+    {
+        //header('location: fetch_driving_licence.php');
+        echo "Record Updated";
+    }
+    else
+    {
+        echo "Faield to insert. Please try again..!!";
+    }
+?>

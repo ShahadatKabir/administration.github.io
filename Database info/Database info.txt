@@ -1,0 +1,66 @@
+Database name : driving_licence   -----> type: utf8mb4_general_ci
+Table name : dl_applicant_info
+Table_data name & type : 
+	NIDPassport_number = varchar(12) Primary, Unique
+	First_name = varchar(20)
+	Last_name = varchar(20)
+	Full_name = varchar(40)
+	Gender = varchar(8)
+	DOB = date
+	Place_of_birth = varchar(20)
+	Country_of_birth = varchar(20)
+	Mobile_number = int(15)
+	Blood_group = text
+	Type_of_vehicles = varchar(10)
+	Time = 	timestamp
+
+----------------------------------------------------------------
+
+Database name : driving_licence   -----> type: utf8mb4_general_ci
+Table name : dl_correct_info
+Table_data name & type : 
+	NIDPassport_number = varchar(12) Primary, Unique
+	Full_name = text
+	Text_info = varchar(100)
+
+----------------------------------------------------------------
+
+Database name : admin_login   ----> type: latin1_general_cs
+Table name : admin_login_info
+Table_data name & type : 
+	user_name = varchar(100) Primary, Unique
+	password = varchar(100)
+
+----------------------------------------------------------------
+
+Database name : govt_notice   ----> type: utf8mb4_general_ci
+Table name : govt_notice1
+Table_data name & type : 
+	Date = date
+	Title = text
+	PDF = mediumblob
+	Time = datetime
+
+----------------------------------------------------------------
+
+Database name : user_profile   ----> type: utf8mb4_general_ci
+Table name : user_1
+Table_data name & type : 
+	Id = varchar(15)
+	Name = varchar(50)	
+	Lives_in = varchar(30)	
+	Mobile = int(20)
+	Email = varchar(50)
+	Work = varchar(30)
+	Education = varchar(30)	
+	Citizen = varchar(20)
+
+
+
+
+
+
+
+
+
+

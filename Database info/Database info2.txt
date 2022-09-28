@@ -1,0 +1,130 @@
+
+---------------------------------------------------------------- 1
+
+Database name : driving_licence   -----> type: utf8mb4_general_ci
+Table name : dl_applicant_info
+Table_data name & type : 
+	NIDPassport_number = varchar(12) Primary, Unique
+	First_name = varchar(20)
+	Last_name = varchar(20)
+	Full_name = varchar(40)
+	Gender = varchar(8)
+	DOB = date
+	Place_of_birth = varchar(20)
+	Country_of_birth = varchar(20)
+	Mobile_number = int(15)
+	Blood_group = text
+	Type_of_vehicles = varchar(10)
+	Time = 	timestamp
+
+---------------------------------------------------------------- 2
+
+Database name : driving_licence   -----> type: utf8mb4_general_ci
+Table name : dl_correct_info
+Table_data name & type : 
+	NIDPassport_number = varchar(12) Primary, Unique
+	Full_name = text
+	Text_info = varchar(100)
+
+---------------------------------------------------------------- 3
+
+Database name : admin_login   ----> type: latin1_general_cs
+Table name : admin_login_info
+Table_data name & type : 
+	user_name = varchar(100) Primary, Unique
+	password = varchar(100)
+
+---------------------------------------------------------------- 4
+
+Database name : govt_notice   ----> type: utf8mb4_general_ci
+Table name : govt_notice1
+Table_data name & type : 
+	Date = date
+	Title = text
+	PDF = mediumblob
+	Time = datetime
+
+---------------------------------------------------------------- 5
+
+Database name : user_profile   ----> type: utf8mb4_general_ci
+Table name : user_1
+Table_data name & type : 
+	Id = varchar(15)
+	Name = varchar(50)	
+	Lives_in = varchar(30)	
+	Mobile = int(20)
+	Email = varchar(50)
+	Work = varchar(30)
+	Education = varchar(30)	
+	Citizen = varchar(20)
+	Password = varchar(30)   ----> latin1_general_cs
+
+---------------------------------------------------------------- 6
+
+Database name : nidcard   ----> type : utf8mb4_general_ci
+Table name : nid_registration
+Table_data_name & type : 
+	Name = text
+	Dob = date
+	Birth_certificate_number = int(10)	
+	place_of_birth = varchar(30)
+	fathers_name = text
+	mothers_name = text
+	fathers_nationality = text
+	mothers_nationality = text
+	sex =text
+	permanent_address = varchar(20)
+	present_address = varchar(20)
+
+---------------------------------------------------------------- 7
+
+Database name : birth_certificate   ----> type : utf8mb4_general_ci
+Table name : bc_applicant_info
+Table data name & type :
+	name = varchar(50)
+	dob = date
+	place_of_birth = varchar(20)
+	fathers_name = varchar(30)
+	fathers_nationality = varchar(20)
+	mothers_name = varchar(30)
+	mothers_nationality = varchar(20)
+	sex = varchar(10)
+	parmanent_address = varchar(50)
+	present_address = varchar(50)
+
+---------------------------------------------------------------- 8
+
+Database name : complain   ----> type : utf8mb4_general_ci
+Table name : images
+Table data & type :
+	image = int(11)
+	image_text = varchar(200)
+
+---------------------------------------------------------------- 9
+
+Database name : death_certificate   ----> type : utf8mb4_general_ci
+Table name : dc_applicant_info
+Table data & type : 
+	First_name = text
+	Last_name = text
+	Name_of_authorized_person = text
+	Mail_of_authorized_person = varchar(30)
+	Relation_with_death_person = text
+	Dob = date
+	Time_of_death = varchar(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
